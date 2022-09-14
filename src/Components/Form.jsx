@@ -32,7 +32,7 @@ const Form = ({ clientes, setClientes, cliente, setCliente }) => {
   const handleSubmit = (e)=>{
     e.preventDefault()
     
-    if([nombre, email, telefono, dia, hora, descripcion].includes('')){
+    if([nombre].includes('')){
       setError(true)
       return
     } 
