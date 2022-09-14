@@ -10,6 +10,7 @@ const Patients = ({ cliente, setCliente, deleteClient }) => {
       deleteClient(id)
     }
   }
+  const inputNombre = document.querySelector('#nombre')
   
   return (
     <div className="my-5 bg-white rounded-sm px-8 py-5 shadow-md">
@@ -36,7 +37,10 @@ const Patients = ({ cliente, setCliente, deleteClient }) => {
         <button 
           type='button' 
           className='py-1 px-5 bg-sky-700 rounded-sm text-white text-md hover:bg-sky-600 transition-colors uppercase'
-          onClick={()=>{setCliente(cliente)}}
+          onClick={()=>{
+            setCliente(cliente)
+            inputNombre.focus()
+          }}
         >
           Editar
         </button>

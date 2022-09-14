@@ -24,6 +24,8 @@ const App = () => {
     setClientesLS()
   },[clientes])
 
+  
+
   const deleteClient = id => {
     const updatesClients = clientes.filter((clientState) => clientState.id !== id )
     setClientes(updatesClients)
