@@ -140,7 +140,7 @@ const Form = ({ clientes, setClientes, cliente, setCliente }) => {
           </div>
           {
             error && 
-            <ErrorMessage><p className='text-red-600 font-bold text-md text-center'>Todos los campos son obligatorios</p></ErrorMessage>
+            <ErrorMessage><p className='text-red-600 font-bold text-md text-center'>El nombre es obligatorio</p></ErrorMessage>
           }
           <div className="my-2">
             <input
